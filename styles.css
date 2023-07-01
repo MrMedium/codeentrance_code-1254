@@ -1,0 +1,35 @@
+body {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+  }
+  
+  .loader {
+    width: 400px;
+  }
+  
+  .terminal {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .command {
+    color: #0f0;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #0f0;
+    height: 5px;
+    width: 0;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+  
