@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Access Control</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .card {
+      background-color: #000000;
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      color: #0ac50a;
+      margin-bottom: 20px;
+    }
+    
+    h3 {
+      color: #0ac50a;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      color: #0ac50a;
+      margin-bottom: 20px;
+    }
+
+    input[type="password"] {
+      background-color: #0ac50a;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    button {
+      background-color: #0ac50a;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    function checkCode() {
+      var enteredCode = document.getElementById("code").value;
+      var correctCode = 
+      
+      // Code below
+      
+      "1254";
+      
+      var inputField = document.getElementById("code");
+      var errorMessage = document.getElementById("error-message");
+
+      if (enteredCode === correctCode) {
+        window.location.href = "destination.html"; // Redirect to the destination page
+      } else {
+        inputField.value = "";
+        inputField.style.animation = "shake 0.4s";
+        setTimeout(function() {
+          inputField.style.animation = "";
+        }, 400);
+        errorMessage.style.display = "block";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Access Control</h1>
+      <p><h4>Please enter the correct code to proceed:</h4></p>
+      <pre><h3>
+|     Website secured      |
+|    Secured via KNOCKS    |
+| Created via. Harry Irwin |
+      </pre></h3>
+      <input type="password" id="code">
+      <div id="error-message" class="error-message"><b>Incorrect code</b></div>
+      <br>
+      <button onclick="checkCode()">Submit</button>
+    </div>
+  </div>
+</body>
+</html>
